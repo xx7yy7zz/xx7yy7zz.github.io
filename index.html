@@ -1,60 +1,92 @@
 <!DOCTYPE html>
 <html lang="en" class="classes">
-  
-  <head>
-  <title>~</title>
-    <link rel="stylesheet" href="style.css">
 
+<head>
+  <title>home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="icon.png">
 </head>
+
 <body>
   <nav>
-    <h1>ジェイ</h1>
+    <button id="boton">
+      <h1 id="titulo">ホーム</h1>
+    </button>
     <ul>
-      <li>General</li>
-      <li><a href="https://github.com/">github</a></li>
-      <li><a href="https://wallhaven.cc/">wallhaven</a></li>
+      <li></li>
+      <li><a href="https://youtube.com/">youtube</a></li>
+      <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
+      <li><a href="https://disneyplus.com/">disney+</a></li>
       <li><a href="https://www.netflix.com/">netflix</a></li>
-      <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
-
     </ul>
-
     <ul>
-      <li>Anime</li>
-      <li><a href="https://anilist.co/home">anilist</a></li>
-      <li><a href="https://animepahe.org/">animepahe</a></li>
-      <li><a href="https://animixplay.to/">animixplay</a></li>
-      <li><a href="https://subsplease.org/">subsplease</a></li>
-
+      <li></li>
+      <li><a href="https://facebook.com/">facebook</a></li>
+      <li><a href="https://www.instagram.com/">instagram</a></li>
+      <li><a href="https://twitter.com/">twitter</a></li>
+      <li><a href="https://www.reddit.com/">reddit</a></li>
+      <li><a href="https://www.discord.com/app">discord</a></li>
     </ul>
-
     <ul>
-      <li>Reddit</li>
-      <li><a href="https://www.reddit.com/r/unixporn/">r/unixporn</a></li>
-      <li><a href="https://www.reddit.com/r/Animemes/">r/animeme</a></li>
-      <li><a href="https://www.reddit.com/r/archlinux/">r/archlinux</a></li>
-      <li><a href="https://www.reddit.com/r/anime_irl/">r/anime_irl</a></li>
-      
-      <form action="https://duckduckgo.com/" method="GET">
-  <input autofocus
-         name="q"
-         type="search"
-         placeholder="Search with ddg...">
-</form>
-
+      <li>󰊖</li>
+      <li><a href="https://store.steampowered.com">steam</a></li>
+      <li><a href="https://roblox.com/">roblox</a></li>
+      <li><a href="https://store.epicgames.com/es-MX/">epic store</a></li>
+      <li><a href="https://lms.santanderopenacademy.com/courses/971/modules"><b><i>kurso</i></b></a></li>
+      <li><a href="https://subsplease.org/"></a></li>
     </ul>
-
     <ul>
-      <li>Social</li>
-      <li><a href="https://web.whatsapp.com/">whatsapp</a></li>
-      <li><a href="https://www.youtube.com/">youtube</a></li>
-      <li><a href="https://odysee.com/">odysee</a></li>
-      <li><a href="https://www.9gag.com/">9gag</a></li>
-
+      <li>󱙧</li>
+      <li><a href="https://xl3lackout.github.io/MHFZ-Ferias-English-Project/">ferias</a></li>
+      <li><a href="https://aqiu384.github.io/megaten-fusion-tool/smt5v/demons">smt5-d</a></li>
+      <li><a href="https://aqiu384.github.io/megaten-fusion-tool/smt5v/skills">smt5-s<a></li>
+      <li><a href=""></a></li>
     </ul>
-    
+    <ul>
+      <li>󰑴</li>
+      <li><a href="https://proyecta.utch.edu.mx/">proyecta</a></li>
+      <li><a href="https://virtual.utch.edu.mx/">moodle</a></li>
+      <li><a href="https://virtualbis.utch.edu.mx/">virtualbis</a></li>
+      <li><a href="https://teams.microsoft.com/v2/">teams</a></li>
+    </ul>
+    <ul>
+      <li>۞</li>
+      <li><a href="https://chat.openai.com">chatgpt</a></li>
+      <li><a href="https://chat.deepseek.com/">deepseek</a></li>
+      <li><a href="https://www.deepl.com/">deepl</a></li>
+    </ul>
+
   </nav>
-  
-  <img src="logo.jpg" alt="anime girl">
-  
+  <img src="M.png" alt="image">
 </body>
+<script>
+  document.getElementById('boton').addEventListener('click', function () {
+    const lists = document.querySelectorAll('ul');
+    lists.forEach(list => {
+      // Cambia el color del <ul>
+      if (list.style.color === 'transparent') {
+        list.style.color = ''; // Restablece el color original
+        list.querySelectorAll('li').forEach(item => {
+          item.style.color = ''; // Restablece el color de los <li>
+        });
+      } else {
+        list.style.color = 'transparent'; // Cambia el color a transparente
+        list.querySelectorAll('li').forEach(item => {
+          item.style.color = 'transparent'; // Cambia el color de los <li> a transparente
+        });
+      }
+    });
+  });
+  document.getElementById('boton').addEventListener('click', function () {
+    const lists = document.querySelectorAll('h1');
+    lists.forEach(list => {
+      if (list.style.color === 'transparent') {
+        list.style.color = ''; // Restablece el color original
+      } else {
+        list.style.color = 'transparent'; // Cambia el color a transparente
+      }
+    });
+  });
+</script>
+
 </html>
