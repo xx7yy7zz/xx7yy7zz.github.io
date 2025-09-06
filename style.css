@@ -1,11 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
+/* :root {
+  --bg: #000000;
+  --icons: #dfdfe7;
+  --text: #c6cadb;
+} */
+
+:root {
+  --bg: #161622;
+  --icons: #8e91e6;
+  --text: #d3daff;
+}
+
 html {
-  background-color: #161622;
+  background-color: var(--bg);
   align-items: center;
-  color: #d3daff;
+  color: var(--text);
   display: flex;
-  font-family: 'JetBrainsMonoNL NF', 'Arial', monospace;
+  font-family: 'CaskaydiaCove Nerd Font', 'JetBrainsMonoNL NF', 'Arial', monospace;
   font-size: 25.5px;
   height: 100%;
   justify-content: center;
@@ -27,7 +39,7 @@ button {
   font-size: 1em;
   margin: 0;
   text-align: center;
-  color: #8e91e6;
+  color: var(--icons);
   grid-column: 1/-1;
 }
 
@@ -35,7 +47,7 @@ h1 {
   font-size: 2em;
   margin: 0;
   text-align: center;
-  color: #8e91e6;
+  color: var(--icons);
   grid-column: 1/-1;
 }
 
@@ -70,17 +82,18 @@ ul {
 li:first-child {
   font-weight: bold;
   line-height: 2em;
-  color: #8e91e6;
+  color: var(--icons);
 }
 
 img {
-  border: 3px solid #d3daff;
+  border: 3px solid var(--text);
   height: auto;
   object-fit: cover;
   object-position: 50% 100%;
   max-width: 75%;
   width: 10em;
   margin-left: 3em;
+  /* filter: grayscale(100%); */
 }
 
 /* input {
